@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'todo_list.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'todo_list.js') }}"></script>
+    <script>
+        var data = {{data|tojson}}
+    </script>
+    <title>To-Do List</title>
+
+    
+</head>
+<body>
+    <div>
+    <div class = "tabs">
+        <a href="/" style="margin-right: 20px;">To-Do List</a>
+        <a href="/announcements">Announcements</a>
+    </div>
+    <div class="container">
+        <span class="title">To-Do List</span>
+        <div class="task-input">
+
+            <div class="task-input-container">
+                <input id = "name-input" type=“text” placeholder="Teammate Name" class="text-fields-container"> 
+                <button id = "add-button" class="selection_button">Add</button>
+            </div>
+            <div class="task-input-container">
+                <select id="dropdown" class="selector">
+                </select>
+                <input id = "task-input" type=text class="text-fields-container" placeholder="Task">
+                <input id = "date-input" type=“date” class="text-fields-container-date" placeholder="09/01/2099">
+                <button id = "assign-button" class="selection_button">Assign</button>
+            </div>
+        </div>
+        <div id="task-details-container" class="task-details-container "></div>
+        <div class="task-bottom-container">
+            <div class="bottom-buttons">
+                <button id = "clear-button" class="clear-button">Clear Complited</button>
+                <button id = "reset-button" class="reset-button">Reset</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

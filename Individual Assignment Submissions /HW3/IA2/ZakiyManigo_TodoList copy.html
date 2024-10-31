@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata for character encoding and viewport settings -->
+  <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 for proper text rendering -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+  <title>To-Do List</title> <!-- Title of the webpage displayed in the browser tab -->
+  <!-- Link to external CSS stylesheet for styling -->
+  <link rel="stylesheet" href="ZakiyManigo_TodoList.css"> <!-- Connects to an external CSS file for styling the webpage -->
+</head>
+<body>
+  <!-- Main container for the application content -->
+  <div class="container">
+    <!-- Header for the To-Do List application -->
+    <h1>To-Do List</h1>
+    
+    <!-- Section for adding new teammates -->
+    <div class="input-section">
+      <!-- Input field for entering a teammate's name -->
+      <input type="text" id="teammateNameInput" class="teammate-name" placeholder="Enter teammate name"> 
+      <!-- Button to add the teammate -->
+      <button class="add-button" id="addTeammateBtn">Add</button> <!-- Triggers the addition of a new teammate -->
+    </div>
+
+    <!-- Section for assigning tasks -->
+    <div class="input-section">
+      <!-- Dropdown menu for selecting a teammate to assign the task to -->
+      <select id="teammateDropdown">
+        <option value="" disabled selected>Assign to</option> <!-- Default message when no teammates are selected -->
+      </select>
+      <div class="task-container">
+        <!-- Input field for entering the task description -->
+        <input type="text" class="task-input" id="taskDescriptionInput" placeholder="Task"> 
+      </div>
+      <div class="date-container">
+        <!-- Input field for selecting the due date of the task -->
+        <input type="date" class="date-input" id="dueDateInput" placeholder="09/01/2099"> 
+      </div>
+      <!-- Button to assign the task to the selected teammate -->
+      <button class="assign-button" id="assignTaskBtn">Assign</button> <!-- Triggers the task assignment process -->
+    </div>
+
+    <hr> <!-- Horizontal line to separate sections -->
+
+    <!-- Section displaying the list of tasks -->
+    <div id="taskContainer" class="taskContainer">
+      <!-- <p id="noTasksMessage">No tasks right now. Please add a teammate and assign a task.</p> --> <!-- Placeholder for message when no tasks are available -->
+    </div>
+
+    <!-- Horizontal line separating sections -->
+    <hr>
+
+    <!-- Buttons for clearing completed tasks and resetting the list -->
+    <div class="button">
+      <button class="clear-button" id="clearCompletedBtn">Clear Completed</button> <!-- Button to clear completed tasks -->
+      <button class="reset-button" id="resetBtn">Reset</button> <!-- Button to reset the entire list -->
+    </div>
+  </div>
+  <!-- Link to external JavaScript file containing the application's functionality -->
+  <script src="ZakiyManigo_TodoList.js"></script> <!-- Connects to an external JavaScript file for interactive functionality -->
+</body>
+</html>

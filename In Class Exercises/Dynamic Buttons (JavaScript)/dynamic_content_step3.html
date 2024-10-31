@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        
+        var numDynamicButtons = 0;
+        
+        function createButton() {
+            numDynamicButtons++;
+            var newButton = $("<button>") // html assigned to the jquery
+            var newButtonText = "Dynamic Button #" + numDynamicButtons
+            
+            $(newButton).text(newButtonText)
+        }
+        
+        $(document).ready(function(){    
+            $("#main-button").click(function(){
+                createButton();
+            })
+        })
+        
+    </script>
+</head>
+
+<body>
+    <button id="main-button">Create Dynamic Button</button>
+</body>
+</html>
+
+<!-- doesnt work because new buttons arent in the DOM tree the html and need a place  -->
+

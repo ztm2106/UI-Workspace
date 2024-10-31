@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        
+        var numDynamicButtons = 0;
+        
+        function createButton() {
+            numDynamicButtons++;
+            var newButton = $("<button>")
+            var newButtonText = "Dynamic Button #" + numDynamicButtons
+            
+            $(newButton).text(newButtonText)
+            $("#dynamic-button-container").append(newButton)
+            $("#dynamic-button-container").append("<br>") //reference to div then appened and assign line break as a child, comes after each button to make one button by another vertically
+            //there's a better way tho
+        }
+        
+        $(document).ready(function(){    
+            $("#main-button").click(function(){
+                createButton();
+            })
+        })
+        
+    </script>
+</head>
+
+<body>
+    <button id="main-button">Create Dynamic Button</button>
+    <br><br>
+    <!-- <br><br> //add to the DOM  -->
+    <div id="dynamic-button-container"></div>
+</body>
+</html>
+
+

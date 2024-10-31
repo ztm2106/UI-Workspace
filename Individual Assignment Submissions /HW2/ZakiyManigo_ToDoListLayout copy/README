@@ -1,0 +1,29 @@
+Features
+Add Teammates and Assign Tasks: Users can input teammate names, assign tasks, and select due dates through a simple interface.
+Task Management: The application displays assigned tasks and provides options to clear or reset tasks.
+Responsive Design: The interface is fully responsive and adapts to different screen sizes for a seamless experience on both desktop and mobile devices.
+
+File Structure
+1. index.html
+Purpose: Defines the structure of the application. Contains input fields for teammates, tasks, and due dates, along with buttons to perform actions.
+Key Elements: Includes containers for adding teammates, assigning tasks, and displaying tasks or "No tasks" messages when appropriate.
+Interaction: Serves as the foundation for user interaction with the form inputs and buttons.
+2. style.css
+Purpose: Provides styles for the application to create a clean and responsive layout.
+Key Features: Flexbox layout, responsive design for small screens, and custom button styles with hover effects.
+Usability: Ensures that all elements like buttons, input fields, and containers are properly aligned and visually appealing.
+3. script.js
+Purpose: Implements the application's logic and interactivity, handling task assignment, clearing tasks, and resetting the form.
+Key Functions: Adds teammates and tasks, manages task visibility, and ensures the "No tasks" message is shown or hidden as needed.
+User Interaction: Dynamically updates the page based on user actions and provides feedback on task management.
+
+How to Use
+Add a Teammate: Enter the name of a teammate in the input field and click the "Add" button.
+Assign a Task: Enter a task name, select a due date, and assign the task to a teammate using the dropdown menu.
+Manage Tasks: View tasks in the list, clear individual tasks, or reset the form to start over.
+No Tasks Message: If no tasks are available, a message will appear prompting the user to add a teammate and assign tasks.
+
+
+To run the project, you can open the html file with the correct CSS file on host on any browser or use  http://"ip_address/"html_filename.html
+
+Link URL to Youtube Video of demonstration: https://youtu.be/lDZYsxckSaI

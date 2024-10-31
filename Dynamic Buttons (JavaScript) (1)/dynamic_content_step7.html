@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        
+        var numDynamicButtons = 0;
+        
+        function createButton() {
+            numDynamicButtons++;
+            var newButton = $("<button class='dynamic-button'>")
+            var newButtonText = "Dynamic Button #" + numDynamicButtons
+            
+            $(newButton).text(newButtonText)
+            $("#dynamic-button-container").append(newButton)
+            
+            $(newButton).click(function(){ alert("Clicked " + newButtonText + "!") })
+        }
+        
+        $(document).ready(function(){    
+            $("#main-button").click(function(){
+                createButton();
+            })
+        })
+        
+    </script>
+    
+    <style>
+        
+        .dynamic-button {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <button id="main-button">Create Dynamic Button</button>
+    <br><br>
+    <div id="dynamic-button-container"></div>
+</body>
+</html>
+
+

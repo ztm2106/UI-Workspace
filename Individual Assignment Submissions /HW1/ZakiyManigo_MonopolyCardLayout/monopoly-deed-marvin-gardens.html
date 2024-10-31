@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper scaling on different devices -->
+    <title>Marvin Gardens Title Deed</title> <!-- Title of the document -->
+    <style>
+        /* Basic styles for the body */
+        body {
+            font-family: 'Arial'; /* Set font to Arial */
+            display: flex; /* Use flexbox layout */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Full viewport height */
+            background-color: #f2f2f2; /* Light grey background color */
+        }
+        
+        /* Style for the main card */
+        .card {
+            width: 250px; /* Fixed width of 250px */
+            height: 200px; /* Fixed height of 200px */
+            padding: 10px; /* Padding inside the card */
+            text-align: center; /* Center text alignment */
+            background-color: white; /* White background color */
+        }
+
+        /* Style for the secondary card with border */
+        .card2 {
+            border: 3px solid #000; /* Black border of 3px */
+            width: 225px; /* Fixed width of 225px */
+            padding: 10px; /* Padding inside the card */
+            text-align: center; /* Center text alignment */
+            background-color: white; /* White background color */
+            position: relative; /* Positioning context for absolute positioning */
+        }
+
+        /* Style for the title section within the card */
+        .card-title {
+            background-color: yellow; /* Yellow background color */
+            font-weight: bold; /* Bold text */
+            padding: 0.5px; /* Very small padding */
+            padding-bottom: 5px; /* Padding at the bottom */
+            border: 3px solid #000; /* Black border of 3px */
+            position: absolute; /* Absolute positioning */
+            top: 10px; /* Distance from the top */
+            left: 10px; /* Distance from the left */
+            right: 10px; /* Distance from the right */
+            box-sizing: border-box; /* Include border and padding in the element’s total width and height */
+            text-align: center; /* Center text alignment */
+        }
+
+        /* Style for headers inside the card-title */
+        .card-title h1 {
+            margin: 0; /* Remove default margin */
+            letter-spacing: 3px; /* Increase space between letters */
+            margin-top: 2px; /* Margin at the top */
+        }
+
+        /* Style for the deed title */
+        .deed-title {
+            padding-top: 3px; /* Padding at the top */
+            font-size: 13px; /* Font size of 13px */
+            font-weight: bold; /* Bold text */
+        }
+
+        /* Style for the property title */
+        .property-title {
+            font-size: 15px; /* Font size of 15px */
+            font-weight: bold; /* Bold text */
+        }
+
+        /* Style for paragraphs inside property-title */
+        .property-title p {
+            margin: 1px 0; /* Margin of 1px on top and bottom */
+        }
+            
+        /* Style for content section */
+        .content {
+            margin: 65px 0 -20px 0; /* Margin around the content */
+            font-size: 16px; /* Font size of 16px */
+            line-height: 0.3; /* Line height for spacing between lines */
+        }
+
+        /* Style for content with left alignment */
+        .content2 {
+            font-size: 16px; /* Font size of 16px */
+            padding-left: 26px; /* Padding on the left */
+            text-align: left; /* Left align text */
+            line-height: 0.3; /* Line height for spacing between lines */
+        }
+
+        /* Style for content with right alignment */
+        .content3 {
+            font-size: 16px; /* Font size of 16px */
+            padding-right: 15px; /* Padding on the right */
+            text-align: right; /* Right align text */
+            line-height: 0.3; /* Line height for spacing between lines */
+        }
+
+        /* Style for container holding multiple content sections */
+        .container {
+            display: flex; /* Use flexbox layout */
+            justify-content: space-between; /* Space items evenly */
+            margin: 0 100px -15px -10px; /* Margin around the container */
+            width: 99%; /* Width of 99% of the parent container */
+        }
+
+        /* Style for centered content */
+        .content4 {
+            font-size: 16px; /* Font size of 16px */
+            text-align: center; /* Center align text */
+            line-height: 0.3; /* Line height for spacing between lines */
+        }
+
+        /* Style for small text with left alignment */
+        .small-text {
+            font-size: 9px; /* Font size of 9px */
+            text-align: left; /* Left align text */
+            margin-top: 12px; /* Margin at the top */
+        }
+
+        /* Style for paragraphs inside small-text */
+        .small-text p {
+            margin: 1px 0; /* Margin of 1px on top and bottom */
+        }
+                
+        /* Style for small centered text */
+        .small-text2 {
+            font-size: 10px; /* Font size of 10px */
+            text-align: center; /* Center align text */
+        }
+
+        /* Style for paragraphs inside small-text2 */
+        .small-text2 p {
+            margin: 1px 0; /* Margin of 1px on top and bottom */
+        }
+
+        /* Style for numbers with letter spacing */
+        .number {
+            letter-spacing: 1px; /* Space between letters */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main card element -->
+    <div class="card">
+        <!-- Secondary card with additional styling -->
+        <div class="card2">
+            <!-- Title section inside the card -->
+            <div class="card-title">
+                <h1 class="deed-title">TITLE DEED</h1> <!-- Deed title -->
+                <h1 class="property-title">MARVIN GARDENS</h1> <!-- Property title -->
+            </div>
+            <!-- Content section inside the card -->
+            <div class="content">
+                <p>RENT $24.</p> <!-- Rent amount -->
+            </div>
+            <!-- Container for rent details with different house counts -->
+            <div class="container">
+                <!-- Content section with house counts -->
+                <div class="content2">
+                    <p>With 1 House</p>
+                    <p>With 2 Houses</p>
+                    <p>With 3 Houses</p>
+                    <p>With 4 Houses</p>
+                </div>
+                <!-- Content section with rent amounts for different house counts -->
+                <div class="content3">
+                    <p>$ 120.</p>
+                    <p>360.</p>
+                    <p>850.</p>
+                    <p>1025.</p>
+                </div>
+            </div>
+            <!-- Additional information section -->
+            <div class="content4">
+                <p>With HOTEL <span class="number">$1200</span>. </p>
+                <p>Mortgage Value <span class="number">$140</span>. </p>
+                <p>Houses cost <span class="number">$150</span>. each</p>
+                <p>Hotels, <span class="number">$150</span>. plus 4 houses</p>
+            </div>          
+            <!-- Small text with additional information -->
+            <div class="small-text">
+                <p>If a player owns ALL the Lots of any Color-Group, the rent is Doubled on Unimproved Lots in that group.</p>
+            </div>
+            <!-- Small centered text for copyright information -->
+            <div class="small-text2">
+                <p>©1935 Hasbro, Inc.</p>
+            </div>           
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata for character encoding and viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <!-- Link to external CSS stylesheet for styling -->
+  <link rel="stylesheet" href="to-do-style.css">
+</head>
+<body>
+  <!-- Main container for the application content -->
+  <div class="container">
+    <!-- Header for the To-Do List application -->
+    <h1>To-Do List</h1>
+    
+    <!-- Section for adding new teammates -->
+    <div class="input-section">
+      <div class="teammate-container">
+        <!-- Input field for entering teammate names -->
+        <input type="text" class="teammate-name" placeholder="Teammate Name">
+        <!-- Button to add the entered teammate to the list -->
+        <button class="add-button">Add</button>
+      </div>
+    </div>
+    
+    <!-- Section for assigning tasks -->
+    <div class="input-section">
+      <div class="select-container">
+        <!-- Dropdown menu to select a teammate -->
+        <select>
+          <option>Leo</option>
+          <!-- Additional teammates can be added here -->
+        </select>
+      </div>
+      <div class="task-container">
+        <!-- Input field for entering the task description -->
+        <input type="text" class="task-input" placeholder="Task">
+      </div>
+      <div class="date-container">
+        <!-- Input field for selecting the due date of the task -->
+        <input type="date" class="date-input" placeholder="09/01/2099">
+      </div>
+      <!-- Button to assign the task to the selected teammate -->
+      <button class="assign-button">Assign</button>
+    </div>
+
+    <!-- Section displaying the list of tasks -->
+    <div class="tasks-section">
+      <!-- Tasks assigned to Arnavi -->
+      <h2>Arnavi</h2>
+      <div class="task">
+        <p>Set up Flask server</p>
+        <div class="task-details">
+          <!-- Due date for the task -->
+          <span>Due: 2099-10-01</span>
+          <!-- Checkbox to mark the task as completed -->
+          <input type="checkbox">
+        </div>
+      </div>
+      <div class="task">
+        <p>Set up Git repo</p>
+        <div class="task-details">
+          <span>Due: 2099-10-01</span>
+          <input type="checkbox">
+        </div>
+      </div>
+
+      <!-- Tasks assigned to Laura -->
+      <h2>Laura</h2>
+      <div class="task">
+        <p>Draft weekly plan</p>
+        <div class="task-details">
+          <span>Due: 2099-09-28</span>
+          <input type="checkbox">
+        </div>
+      </div>
+
+      <!-- Tasks assigned to Leo -->
+      <h2>Leo</h2>
+      <div class="task">
+        <p>Survey existing apps</p>
+        <div class="task-details">
+          <span>Due: 2099-09-28</span>
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal line separating sections -->
+    <hr>
+
+    <!-- Buttons for clearing completed tasks and resetting the list -->
+    <div class="button">
+      <button class="clear-button">Clear Completed</button>
+      <button class="reset-button">Reset</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Link to the custom CSS stylesheet for styling the To-Do List page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='ZakiyManigo_TodoList.css') }}">
+    
+    <!-- Include jQuery library for easier DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Link to the custom JavaScript file for functionality -->
+    <script type="text/javascript" src="{{ url_for('static', filename='ZakiyManigo_TodoList.js') }}"></script>
+    
+    <!-- Convert the server-side data to a JSON object for use in JavaScript -->
+    <script>
+        var data = {{ data | tojson }}
+    </script>
+    
+    <!-- Title of the webpage -->
+    <title>To-Do List</title>
+</head>
+<body>
+    <div>
+        <!-- Navigation tabs for switching between the To-Do List and Announcements pages -->
+        <div class="tabs">
+            <a href="/" style="margin-right: 20px;">To-Do List</a>
+            <a href="/announcements">Announcements</a>
+        </div>
+        
+        <div class="container">
+            <span class="title">To-Do List</span>
+            <div class="task-input">
+                <!-- Input section for adding teammates -->
+                <div class="task-input-container">
+                    <input id="name-input" type="text" placeholder="Teammate Name" class="text-fields-container-name-input"> 
+                    <button id="add-button" class="selection_button">Add</button>
+                </div>
+                
+                <!-- Input section for assigning tasks to teammates -->
+                <div class="task-input-container">
+                    <select id="dropdown" class="selector">
+                        <!-- Dropdown menu for selecting teammates will be populated dynamically -->
+                    </select>
+                    <input id="task-input" type="text" class="text-fields-container" placeholder="Task">
+                    <input id="date-input" type="date" class="text-fields-container-date" placeholder="09/01/2099">
+                    <button id="assign-button" class="selection_button">Assign</button>
+                </div>
+            </div>
+            
+            <!-- Container for displaying task details dynamically -->
+            <div id="task-details-container" class="task-details-container"></div>
+            
+            <div class="task-bottom-container">
+                <div class="bottom-buttons">
+                    <!-- Button to clear completed tasks -->
+                    <button id="clear-button" class="clear-button">Clear Completed</button>
+                    <!-- Button to reset the entire task list -->
+                    <button id="reset-button" class="reset-button">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

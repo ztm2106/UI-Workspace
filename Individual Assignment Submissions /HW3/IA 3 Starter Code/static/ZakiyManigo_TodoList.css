@@ -1,0 +1,210 @@
+/* General styling for the entire body of the page */
+body {
+  background-color: #f4f4f4; /* Set a light gray background color */
+  font-family: Arial, sans-serif; /* Use Arial font, fall back to sans-serif if not available */
+  font-size: 1em; /* Set base font size */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align content at the start of the flex container */
+  min-height: 100vh; /* Make sure the body takes at least the full height of the viewport */
+}
+
+/* Title styling */
+.title {
+  font-size: 2em; /* Set title font size */
+  font-weight: bold; /* Make title bold */
+  display: flex; /* Use flexbox for title layout */
+  justify-content: center; /* Center title horizontally */
+  margin-bottom: 0.5em; /* Add space below the title */
+}
+
+/* Styling for tab navigation */
+.tabs {
+  display: flex; /* Use flexbox for tab layout */
+  justify-content: center; /* Center tabs horizontally */
+}
+
+/* Main container styling for content */
+.container {
+  background-color: white; /* Set white background for the container */
+  width: 90%; /* Set container width to 90% of its parent */
+  max-width: 600px; /* Limit maximum width to 600px */
+  margin-top: 50px; /* Add space above the container */
+  padding: 20px; /* Add padding inside the container */
+  border-radius: 10px; /* Round the corners of the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Styling for main headings */
+h1 {
+  font-size: 2em; /* Set heading font size */
+  font-weight: bold; /* Make heading bold */
+  text-align: center; /* Center the heading text */
+}
+
+/* Input area for tasks */
+.task-input {
+  display: flex; /* Use flexbox for input layout */
+  flex-direction: column; /* Arrange inputs vertically */
+  margin-bottom: 20px; /* Add space below the input area */
+  border-bottom: inset; /* Add an inset border at the bottom */
+}
+
+/* Container for individual task input fields */
+.task-input-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  margin-bottom: 15px; /* Add space below the container */
+}
+
+/* Container for displaying task details */
+.task-details-container {
+  display: flex; /* Use flexbox for layout */
+  flex-flow: column; /* Arrange items in a column */
+  margin-bottom: 20px; /* Add space below the details container */
+  border-bottom: inset; /* Add an inset border at the bottom */
+}
+
+/* Container for task-related buttons at the bottom */
+.task-bottom-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center buttons horizontally */
+}
+
+/* Styling for text input fields */
+.text-fields-container {
+  font-size: 1em; /* Set font size for input fields */
+  padding: 5px; /* Add padding inside input fields */
+  border: 1px solid #ccc; /* Add light gray border */
+  border-radius: 5px; /* Round corners of input fields */
+  margin-right: 10px; /* Add space to the right of input fields */
+  flex-grow: 1; /* Allow the field to grow to fill available space */
+}
+
+.text-fields-container-name-input {
+  width: 500px;
+  font-size: 1em; /* Set font size for input fields */
+  padding: 5px; /* Add padding inside input fields */
+  border: 1px solid #ccc; /* Add light gray border */
+  border-radius: 5px; /* Round corners of input fields */
+  margin-right: 10px; /* Add space to the right of input fields */
+  flex-grow: 1; /* Allow the field to grow to fill available space */
+}
+
+/* Styling for date input fields */
+.text-fields-container-date {
+  font-size: 1em; /* Set font size for date input fields */
+  padding: 5px; /* Add padding inside the field */
+  border: 1px solid #ccc; /* Add light gray border */
+  border-radius: 5px; /* Round corners */
+  margin-right: 10px; /* Add space to the right */
+  flex-grow: 1; /* Allow the field to grow */
+  max-width: 8rem; /* Limit maximum width of the date input */
+}
+
+/* Styling for the selector dropdown */
+.selector {
+  margin-right: 6px; /* Add space to the right of the selector */
+}
+
+/* General button styling */
+button {
+  font-size: 1em; /* Set button font size */
+  padding: 8px 15px; /* Add padding inside buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Round corners of buttons */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  background-color: 0.3s; /* Transition for background color */
+}
+
+/* Styling for selection buttons */
+.selection_button {
+  background-color: #007bff; /* Set background color for selection buttons */
+  color: white; /* Set text color to white */
+  min-width: 5rem; /* Set a minimum width for buttons */
+}
+
+/* Hover effect for selection buttons */
+.selection_button:hover {
+  background-color: #0056b3; /* Darken background on hover */
+}
+
+/* Title styling for student section */
+.student-tittle {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center title horizontally */
+  font-size: 1.17em; /* Set font size */
+  font-weight: bold; /* Make title bold */
+  margin-bottom: 1rem; /* Add space below the title */
+}
+
+/* Styling for individual task items */
+.task {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align items vertically centered */
+  background-color: #f4f4f4; /* Set light gray background for tasks */
+  padding: 10px; /* Add padding inside the task item */
+  border-radius: 5px; /* Round corners of task items */
+  margin-bottom: 10px; /* Add space below each task */
+}
+
+/* Styling for due date text within task items */
+.due-date {
+  font-size: 0.9em; /* Set smaller font size for due dates */
+  color: #666; /* Set text color to gray */
+  margin-right: 10px; /* Add space to the right of due date */
+}
+
+/* Styling for clear button */
+.clear-button {
+  background-color: #64d05e; /* Set green background for clear button */
+  color: white; /* Set text color to white */
+}
+
+/* Hover effect for clear button */
+.clear-button:hover {
+  background-color: #4ea649; /* Darken background on hover */
+}
+
+/* Styling for reset button */
+.reset-button {
+  background-color: #c3c3c3; /* Set gray background for reset button */
+  color: white; /* Set text color to white */
+}
+
+/* Hover effect for reset button */
+.reset-button:hover {
+  background-color: #8f8f8f; /* Darken background on hover */
+}
+
+/* Styling for buttons in the bottom section */
+.bottom-buttons {
+  font-size: 0.81em; /* Set smaller font size for bottom buttons */
+  padding: 7px 5px; /* Add padding inside bottom buttons */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 543px) {
+  .task-input-container {
+      flex-direction: column; /* Stack input fields vertically on smaller screens */
+      align-items: stretch; /* Stretch input fields to fill available space */
+  }
+}
+
+/* Styling for no tasks message */
+.no-tasks {
+  display: flex; /* Use flexbox for layout */
+  color: grey; /* Set text color to gray */
+  font-size: 1rem; /* Set font size */
+  justify-content: center; /* Center text horizontally */
+  margin-bottom: 1rem; /* Add space below the message */
+}
+
+/* Styling for completed tasks */
+.completed {
+  text-decoration: line-through; /* Strike through completed tasks */
+  color: #ccc; /* Set color to light gray */
+}

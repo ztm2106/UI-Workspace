@@ -1,0 +1,6 @@
+The HTML structure includes input fields for adding teammates and tasks, dropdowns for selecting teammates, and buttons for task 
+assignment and list management. The CSS styles the application with a clean, modern look, including responsive design adjustments for 
+various screen sizes. It features user-friendly elements such as buttons with hover effects and task items with checkboxes to mark 
+completion.
+
+To run the project, you can open the html file with the correct CSS file on host on any browser or use  http://"ip_address/"html_filename.html

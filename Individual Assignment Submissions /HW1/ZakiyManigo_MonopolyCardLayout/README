@@ -1,0 +1,3 @@
+This project for layout in HTML + CSS Monopoly card begins with two containers as the base of the card, where the body gives the shape of the card without a border and the second container is about 5px padded on all sides with a black border. One more container was made where the background is yellow and holds the title. Under this container are the card text that is padded 5px on the bottom. The first set of text is centered, the second set of text is basically in two columns that are spaced in the middle of the columns, the third set of text is centered, the fourth set of text is aligned to the left and the fifth set of text is center.
+
+To run the project, you can open the html file with any browser or use  http://"ip_address/"html_filename.html
